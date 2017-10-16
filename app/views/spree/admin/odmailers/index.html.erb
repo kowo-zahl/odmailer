@@ -1,0 +1,17 @@
+<% content_for :page_title do %>
+  <%= "Odmailer" %>
+<% end %>
+
+
+<% @emails.each do |email|%>
+<%= email.email%>
+<%= link_to_edit email, no_text: true %>&nbsp;
+<%= link_to_delete email, no_text: true %>
+<br />
+<%end%>
+<br />
+<br />
+<br />
+Neue Emailadresse anlegen:
+<br />
+<%= link_to "Neue Email",new_admin_odmailer_url%>      

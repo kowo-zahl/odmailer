@@ -1,0 +1,10 @@
+Folgende Teile wurden bestellt.
+
+
+<%= "Bestellnummer: "+@order.number %>
+============================================================
+<% @order.line_items.each do |item| %>
+  <%= item.variant.sku %> <%= raw(item.variant.product.name) %> <%= raw(item.variant.options_text) -%>                            Anzahl: <%=item.quantity%>
+<% end %>
+============================================================
+

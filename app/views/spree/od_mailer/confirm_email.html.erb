@@ -1,0 +1,26 @@
+<table class="row header">
+  <tr>
+    <td>
+
+      <p>
+        <%= "Bestellnummer: "+@order.number %>
+      </p>
+      <table class="container">
+        <tr>
+          <td class="wrapper last">
+            <table class="twelve columns">
+<% @order.line_items.each do |item| %>
+  <%= item.variant.sku %> <%= raw(item.variant.product.name) %> <%= raw(item.variant.options_text) -%>                            Anzahl: <%=item.quantity%>
+<br>
+<% end %>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <p>
+
+      </p>
+    </td>
+    <td class="expander"></td>
+  </tr>
+</table>
