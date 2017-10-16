@@ -7,7 +7,7 @@ Odmailer is a Spree Plugin for sending emails with the orders of the Customers t
 
 1. Add this extension to your Gemfile with this line:
   ```ruby
-  gem 'spree_od_mail', github: 'kowo-zahl/spree_od_mail'
+  gem 'spree_od_mail', github: 'kowo-zahl/odmailer'
   ```
 
 2. Install the gem using Bundler:
